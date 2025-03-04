@@ -1,0 +1,41 @@
+# Command index file
+# Last updated 29/03/2022
+
+MsgBox=body,option,title
+
+/Memory.Save()
+/Memory.Load()
+
+/Windows.Process.Start=executable_path_or_name,argument_line
+/Windows.Process.Stop=executable_name
+/Windows.Process.Get()
+/Windows.FileSystem.GetDirectory=directory_path
+/Windows.FileSystem.GetFiles=directory_path
+/Windows.FileSystem.Read=file_path
+/Windows.FileSystem.Write=file_path,content,append
+/Windows.FileSystem.DirCreate=directory_path
+/Windows.FileSystem.Delete=file_or_folder_path
+/Windows.Clipboard.Set=text
+/Windows.Clipboard.Get()
+/Windows.System.GetHost()
+
+/Payloads.DownloadComponent=file_download_link,file_name_with_extencion,bool_if_run_or_not,argument_line,optional_save_path
+/Payloads.Upload.File=file_path,optional_php_file_upload
+/Payloads.SendTheKeys=executable_name_or_path,content
+/Payloads.TakeScreenshot()
+/Payloads.Inputs=true_false
+/Payloads.PostNotify=TipTimeOut,TipTitle,TipText,TipIcon,TipIconPath
+
+/Heartbeat
+/SendTelemetry()
+/Status
+
+boro-get status install uninstall reset set|key|value <packet [runIt? parameters___]>
+
+/Pause=ms_time
+/Stop
+/Restart
+/Update
+/ForceUpdate
+/Reset
+/Uninstall
